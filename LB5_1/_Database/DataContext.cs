@@ -9,7 +9,7 @@ namespace LB5_1._Database
 {
     public class DataContext : DbContext
     {
-        public DataContext() : base("StudioRecordings") { }
+        public DataContext() : base("StudioRecording") { }
         public DbSet<User> Users { get; set; }
         public DbSet<DiningRoom> Studios { get; set; }
         public DbSet<Item> Records { get; set; }

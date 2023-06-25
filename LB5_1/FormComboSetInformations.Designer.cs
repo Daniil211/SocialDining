@@ -81,7 +81,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // FormProjectInformations
+            // FormComboSetInformations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,9 +91,9 @@
             this.Controls.Add(this.yearLabel);
             this.Controls.Add(this.authorLabel);
             this.Controls.Add(this.titleLabel);
-            this.Name = "FormProjectInformations";
+            this.Name = "FormComboSetInformations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormProjectInformations";
+            this.Text = "FormComboSetInformations";
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

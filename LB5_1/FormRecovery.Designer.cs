@@ -114,7 +114,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormRecovery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RecoverAcc";
+            this.Text = "Recovery Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

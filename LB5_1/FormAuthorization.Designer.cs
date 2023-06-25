@@ -87,9 +87,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(10, 248);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 15);
+            this.label4.Size = new System.Drawing.Size(115, 15);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Создать исполнителя";
+            this.label4.Text = "Создать посетителя";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -117,9 +117,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(10, 274);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 15);
+            this.label6.Size = new System.Drawing.Size(144, 15);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Создать звукорежисера";
+            this.label6.Text = "Создать администратора";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // FormAuthorization

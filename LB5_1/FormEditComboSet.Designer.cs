@@ -116,7 +116,7 @@
             this.textBoxTitle.Size = new System.Drawing.Size(100, 23);
             this.textBoxTitle.TabIndex = 17;
             // 
-            // FormEditProject
+            // FormEditComboSet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,9 +130,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "FormEditProject";
+            this.Name = "FormEditComboSet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormEditProject";
+            this.Text = "FormEditComboSet";
             this.ResumeLayout(false);
             this.PerformLayout();
 

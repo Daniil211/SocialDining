@@ -42,8 +42,6 @@
             this.studioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.recordsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.studioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recordsBindingSource)).BeginInit();
@@ -59,28 +57,29 @@
             // 
             // dtpDate
             // 
-            this.dtpDate.Location = new System.Drawing.Point(126, 28);
+            this.dtpDate.Location = new System.Drawing.Point(126, 62);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(200, 23);
             this.dtpDate.TabIndex = 0;
             // 
             // txtDuration
             // 
-            this.txtDuration.Location = new System.Drawing.Point(126, 57);
+            this.txtDuration.Location = new System.Drawing.Point(126, 91);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(100, 23);
             this.txtDuration.TabIndex = 1;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(126, 86);
+            this.txtPrice.Location = new System.Drawing.Point(126, 120);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 23);
             this.txtPrice.TabIndex = 2;
+            this.txtPrice.Text = "0";
             // 
             // txtNumber
             // 
-            this.txtNumber.Location = new System.Drawing.Point(126, 115);
+            this.txtNumber.Location = new System.Drawing.Point(126, 33);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(100, 23);
             this.txtNumber.TabIndex = 3;
@@ -88,16 +87,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 29);
+            this.label1.Location = new System.Drawing.Point(22, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.Size = new System.Drawing.Size(82, 30);
             this.label1.TabIndex = 4;
-            this.label1.Text = "дата и время";
+            this.label1.Text = "Дата и время \r\nпоставки";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 65);
+            this.label2.Location = new System.Drawing.Point(22, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 5;
@@ -106,7 +105,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 94);
+            this.label3.Location = new System.Drawing.Point(22, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 15);
             this.label3.TabIndex = 6;
@@ -115,17 +114,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 123);
+            this.label4.Location = new System.Drawing.Point(22, 36);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 15);
+            this.label4.Size = new System.Drawing.Size(90, 15);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Номер";
+            this.label4.Text = "Наименование";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(126, 184);
+            this.button1.Location = new System.Drawing.Point(22, 155);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(204, 34);
             this.button1.TabIndex = 8;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -149,29 +148,11 @@
             this.recordsBindingSource.DataMember = "Records";
             this.recordsBindingSource.DataSource = this.studioBindingSource;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(126, 144);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 152);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 15);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Id_Studia";
-            // 
-            // FormRecord
+            // FormItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(691, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -182,8 +163,9 @@
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.dtpDate);
-            this.Name = "FormRecord";
-            this.Text = "FormRecord";
+            this.Name = "FormItem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormItem";
             ((System.ComponentModel.ISupportInitialize)(this.studioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.recordsBindingSource)).EndInit();

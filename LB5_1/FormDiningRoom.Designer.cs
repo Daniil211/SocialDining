@@ -108,9 +108,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(128, 275);
+            this.button1.Location = new System.Drawing.Point(29, 255);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(158, 23);
             this.button1.TabIndex = 8;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -119,26 +119,26 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(323, 82);
+            this.label5.Location = new System.Drawing.Point(159, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 15);
+            this.label5.Size = new System.Drawing.Size(474, 15);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Здесь добавляются студии";
+            this.label5.Text = "Добавление в систему новой столовой в которой можно будет покушать бесплатно";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(236, 148);
+            this.dataGridView1.Location = new System.Drawing.Point(233, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(540, 175);
             this.dataGridView1.TabIndex = 10;
             // 
-            // FormStudio
+            // FormDiningRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 313);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -150,8 +150,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FormStudio";
-            this.Text = "FormStudio";
+            this.Name = "FormDiningRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormDiningRoom";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
