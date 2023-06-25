@@ -16,9 +16,9 @@ namespace LB5_1
 {
     public partial class FormAdminStart : Form
     {
-        private Musician currentUser;
-        private List<Project> Project;
-        public FormAdminStart(Musician musician)
+        private Admin currentUser;
+        private List<СomboSet> Project;
+        public FormAdminStart(Admin musician)
         {
             InitializeComponent();
             this.currentUser = musician;
@@ -115,7 +115,7 @@ namespace LB5_1
 
                 card.Click += (sender, e) =>
                 {
-                    var form = new FormProjectInformations(Project);
+                    var form = new FormComboSetInformations(Project);
                     form.ShowDialog();
                 };
 
@@ -125,7 +125,7 @@ namespace LB5_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormProjects form = new FormProjects();
+            FormComboSet form = new FormComboSet();
             form.ShowDialog();
         }
 
@@ -136,14 +136,20 @@ namespace LB5_1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormProjectEditAndDelete form = new FormProjectEditAndDelete();
+            FormComboSetEditAndDelete form = new FormComboSetEditAndDelete();
             form.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormStudio form = new FormStudio();
+            FormDiningRoom form = new FormDiningRoom();
             form.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormItem form = new FormItem();
+            form.Show();
         }
     }
 }

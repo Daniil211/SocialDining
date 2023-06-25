@@ -16,6 +16,6 @@ namespace LB5_1._Database
         public string Email { get; set; }
         public string Password { get; set; }
         public byte[]? Photo { get; set; }
-        public List<Project>? Projects { get; set; }
+        public List<СomboSet>? Projects { get; set; }
     }
 }

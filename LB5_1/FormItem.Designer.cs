@@ -1,6 +1,6 @@
 ﻿namespace LB5_1
 {
-    partial class FormRecord
+    partial class FormItem
     {
         /// <summary>
         /// Required designer variable.
@@ -133,7 +133,7 @@
             // 
             // studioBindingSource
             // 
-            this.studioBindingSource.DataSource = typeof(LB5_1._Database.Studio);
+            this.studioBindingSource.DataSource = typeof(LB5_1._Database.DiningRoom);
             // 
             // dataGridView1
             // 

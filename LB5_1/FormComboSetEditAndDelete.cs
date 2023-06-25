@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace LB5_1
 {
-    public partial class FormProjectEditAndDelete : Form
+    public partial class FormComboSetEditAndDelete : Form
     {
         DbContext db;
-        public FormProjectEditAndDelete()
+        public FormComboSetEditAndDelete()
         {
             using (DataContext db = new DataContext())
             {
@@ -38,7 +38,7 @@ namespace LB5_1
                         bool converted = Int32.TryParse(dataGridView1[0, index].Value.ToString(), out id);
                         if (converted == false)
                             return;
-                        Project Project = db.Projects.Find(id);
+                        СomboSet Project = db.Projects.Find(id);
                         db.Projects.Remove(Project);
                         db.SaveChanges();
                         db.Projects.Load();
@@ -64,11 +64,11 @@ namespace LB5_1
                     bool converted = Int32.TryParse(dataGridView1[0, index].Value.ToString(), out id);
                     if (converted == false)
                         return;
-                    Project Project = db.Projects.Find(id);
-                    FormEditProject ordForm = new FormEditProject();
+                    СomboSet Project = db.Projects.Find(id);
+                    FormEditComboSet ordForm = new FormEditComboSet();
                     ordForm.textBoxTitle.Text = Project.Name;
                     ordForm.textBoxGenre.Text = Project.Genre;
-                    ordForm.textBoxDr.Text = Project.Duration.ToString();
+                    ordForm.textBoxDr.Text = Project.СaloricСontent.ToString();
                     //ordForm.textBoxText.Text = Project.Musician_Id;
                     //ordForm.textBox1.Text = Project.Record_Id;
                     //ordForm.textBox2.Text = Project.User_Id;
@@ -79,7 +79,7 @@ namespace LB5_1
 
                     Project.Name = ordForm.textBoxTitle.Text;
                     Project.Genre = ordForm.textBoxGenre.Text;
-                    Project.Duration = Convert.ToInt32(ordForm.textBoxDr.Text);
+                    Project.СaloricСontent = Convert.ToInt32(ordForm.textBoxDr.Text);
                     //Project.Musician_Id = ordForm.textBoxText.Text;
                     //Project.Record_Id = ordForm.textBox1.Text;
                     //Project.User_Id = ordForm.textBox2.Text;

@@ -5,9 +5,9 @@ using System.Data.Entity;
 
 namespace LB5_1
 {
-    public partial class FormProjects : Form
+    public partial class FormComboSet : Form
     {
-        public FormProjects()
+        public FormComboSet()
         {
             using (DataContext db = new DataContext())
             {
@@ -62,10 +62,10 @@ namespace LB5_1
                         MessageBox.Show("Заполните все поля");
                         return;
                     }
-                    Project project = new Project
+                    СomboSet project = new СomboSet
                     {
                         Name = textBoxTitle.Text,
-                        Duration = Convert.ToInt32(textBoxDr.Text),
+                        СaloricСontent = Convert.ToInt32(textBoxDr.Text),
                         Genre = textBoxGenre.Text,
                         Cover = GetImageBytes(pictureBox1.Image),
                     };

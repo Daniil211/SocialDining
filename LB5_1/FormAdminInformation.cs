@@ -16,8 +16,8 @@ namespace LB5_1
 {
     public partial class FormAdminInformation : Form
     {
-        private Musician user;
-        public FormAdminInformation(Musician user)
+        private Admin user;
+        public FormAdminInformation(Admin user)
         {
             InitializeComponent();
             this.user = user;

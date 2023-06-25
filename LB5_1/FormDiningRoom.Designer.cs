@@ -1,6 +1,6 @@
 ﻿namespace LB5_1
 {
-    partial class FormStudio
+    partial class FormDiningRoom
     {
         /// <summary>
         /// Required designer variable.

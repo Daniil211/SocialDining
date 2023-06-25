@@ -1,6 +1,6 @@
 ﻿namespace LB5_1
 {
-    partial class FormProjectInformations
+    partial class FormComboSetInformations
     {
         /// <summary>
         /// Required designer variable.

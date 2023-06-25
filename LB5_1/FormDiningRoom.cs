@@ -14,9 +14,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LB5_1
 {
-    public partial class FormStudio : Form
+    public partial class FormDiningRoom : Form
     {
-        public FormStudio()
+        public FormDiningRoom()
         {
             using (DataContext db = new DataContext())
             {
@@ -34,7 +34,7 @@ namespace LB5_1
                 {
                     if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox3.Text) && !string.IsNullOrWhiteSpace(textBox4.Text))
                     {
-                        Studio Studio = new Studio
+                        DiningRoom Studio = new DiningRoom
                         {
                             Address = textBox1.Text,
                             Time = textBox2.Text,

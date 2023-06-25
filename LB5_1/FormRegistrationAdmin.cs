@@ -14,9 +14,9 @@ using System.Data.SqlClient;
 
 namespace LB5_1
 {
-    public partial class FormRegistrationMusicians : Form
+    public partial class FormRegistrationAdmin : Form
     {
-        public FormRegistrationMusicians()
+        public FormRegistrationAdmin()
         {
             InitializeComponent();
         }
@@ -89,7 +89,7 @@ namespace LB5_1
                             MessageBox.Show("Пользователь с таким логином уже существует");
                             return;
                         }
-                        Musician user = new Musician
+                        Admin user = new Admin
                         {
                             FirstName = textBoxLog.Text,
                             LastName = textBoxLN.Text,

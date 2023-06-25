@@ -11,9 +11,9 @@ namespace LB5_1._Database
     {
         public DataContext() : base("StudioRecordings") { }
         public DbSet<User> Users { get; set; }
-        public DbSet<Studio> Studios { get; set; }
-        public DbSet<Record> Records { get; set; }
-        public DbSet<Project> Projects { get; set; }
-        public DbSet<Musician> Musicians { get; set; }
+        public DbSet<DiningRoom> Studios { get; set; }
+        public DbSet<Item> Records { get; set; }
+        public DbSet<СomboSet> Projects { get; set; }
+        public DbSet<Admin> Musicians { get; set; }
     }
 }

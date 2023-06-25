@@ -1,6 +1,6 @@
 ﻿namespace LB5_1
 {
-    partial class FormRegistrationMusicians
+    partial class FormRegistrationAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -122,9 +122,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(75, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 25);
+            this.label4.Size = new System.Drawing.Size(299, 25);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Регистрация звукорежисера";
+            this.label4.Text = "Регистрация администратора";
             // 
             // button1
             // 
@@ -201,7 +201,7 @@
             this.label9.TabIndex = 38;
             this.label9.Text = "Возраст";
             // 
-            // FormRegistrationMusicians
+            // FormRegistrationAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,7 +224,7 @@
             this.Controls.Add(this.textBoxLog);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "FormRegistrationMusicians";
+            this.Name = "FormRegistrationAdmin";
             this.Text = "FormRegistrationMusicians";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
             this.ResumeLayout(false);

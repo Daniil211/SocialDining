@@ -112,9 +112,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(47, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 50);
+            this.label4.Size = new System.Drawing.Size(138, 50);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Регистрация \r\nИсполнителя";
+            this.label4.Text = "Регистрация \r\nПосетителя";
             // 
             // pictureBoxPhoto
             // 

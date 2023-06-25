@@ -14,9 +14,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LB5_1
 {
-    public partial class FormRecord : Form
+    public partial class FormItem : Form
     {
-        public FormRecord()
+        public FormItem()
         {
             using (DataContext db = new DataContext())
             {
@@ -36,15 +36,15 @@ namespace LB5_1
                     {
                         int duration = int.Parse(txtDuration.Text);
                         decimal price = decimal.Parse(txtPrice.Text);
-                        int number = int.Parse(txtNumber.Text);
+                        string name = txtNumber.Text;
                         int studioId = int.Parse(textBox1.Text);
 
-                        Record record = new Record
+                        Item record = new Item
                         {
                             Date = dtpDate.Value,
                             Duration = duration,
                             Price = price,
-                            Number = number,
+                            Name = name,
                         };
                         db.Records.Load();
                         dataGridView1.DataSource = db.Records.Local.ToBindingList();

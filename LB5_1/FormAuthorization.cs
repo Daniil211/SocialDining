@@ -73,7 +73,7 @@ namespace LB5_1
                 string login = textBoxLog.Text;
                 string password = GetHashString(textBoxPas.Text);
                 User? user = db.Users.FirstOrDefault(u => u.FirstName == login && u.Password == password);
-                Musician? musician = db.Musicians.FirstOrDefault(u => u.FirstName == login && u.Password == password);
+                Admin? musician = db.Musicians.FirstOrDefault(u => u.FirstName == login && u.Password == password);
                 if (user != null)
                 {
                     MessageBox.Show("Добро пожаловать, " + user.FirstName);
@@ -100,7 +100,7 @@ namespace LB5_1
 
         private void label6_Click(object sender, EventArgs e)
         {
-            FormRegistrationMusicians form = new FormRegistrationMusicians();
+            FormRegistrationAdmin form = new FormRegistrationAdmin();
             this.Hide();
             form.Show();
         }

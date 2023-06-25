@@ -3,11 +3,11 @@ using System.Diagnostics;
 
 namespace LB5_1
 {
-    public partial class FormProjectInformations : Form
+    public partial class FormComboSetInformations : Form
     {
-        private Project project;
+        private СomboSet project;
 
-        public FormProjectInformations(Project project)
+        public FormComboSetInformations(СomboSet project)
         {
             InitializeComponent();
             this.project = project;
@@ -18,7 +18,7 @@ namespace LB5_1
         {
             titleLabel.Text = project.Name;
             authorLabel.Text = project.Genre;
-            yearLabel.Text = project.Duration.ToString();
+            yearLabel.Text = project.СaloricСontent.ToString();
             if (project.Cover != null)
             {
                 using (var ms = new MemoryStream(project.Cover))

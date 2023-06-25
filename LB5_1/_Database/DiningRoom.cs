@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace LB5_1._Database
 {
-    public class Studio
+    public class DiningRoom
     {
         public int Id { get; set; }
         public string Address { get; set; }
         public string Time { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public List<Record>? Records { get; set; }
-        public List<Musician>? Musicians { get; set; }
+        public List<Item>? Records { get; set; }
+        public List<Admin>? Musicians { get; set; }
     }
 }

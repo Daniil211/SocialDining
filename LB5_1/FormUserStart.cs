@@ -15,7 +15,7 @@ namespace LB5_1
     public partial class FormUserStart : Form
     {
         private User currentUser;
-        private List<Project> Project;
+        private List<СomboSet> Project;
         public FormUserStart(User user)
         {
             InitializeComponent();
@@ -108,7 +108,7 @@ namespace LB5_1
                 card.Click += (sender, e) =>
                 {
 
-                    var form = new FormProjectInformations(Project);
+                    var form = new FormComboSetInformations(Project);
                     form.ShowDialog();
                 };
 
@@ -124,12 +124,6 @@ namespace LB5_1
         private void buttonExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormRecord form = new FormRecord();
-            form.Show();
         }
     }
 }

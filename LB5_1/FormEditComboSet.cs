@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LB5_1
 {
-    public partial class FormEditProject : Form
+    public partial class FormEditComboSet : Form
     {
-        public FormEditProject()
+        public FormEditComboSet()
         {
             InitializeComponent();
         }
