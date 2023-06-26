@@ -15,7 +15,7 @@ namespace LB5_1._Database
         public string Phone { get; set; }
         public int Age { get; set; }
         public string Qualification { get; set; }
-        public DiningRoom? Studio { get; set; }
+        public DiningRoom? DiningRoom { get; set; }
         public string Password { get; set; }
         public byte[]? Photo { get; set; }
         public List<СomboSet>? СomboSets { get; set; }

@@ -13,7 +13,6 @@ namespace LB5_1._Database
         public DateTime? Date { get; set; }
         public int Duration { get; set; }
         public decimal Price { get; set; }
-        public int Number { get; set; }
         public DiningRoom? DiningRoom { get; set; }
         public СomboSet? СomboSet { get; set; }
     }
