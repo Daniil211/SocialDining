@@ -14,8 +14,7 @@ namespace LB5_1._Database
         public string Genre { get; set; }
         public byte[]? Cover { get; set; }
         public User? User { get; set; }
-        public Item? Record { get; set; }
-        public Admin? Musician { get; set; }
-
+        public Admin? Admin { get; set; }
+        public List<Item>? Items { get; set; }
     }
 }

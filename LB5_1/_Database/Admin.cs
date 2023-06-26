@@ -18,6 +18,6 @@ namespace LB5_1._Database
         public DiningRoom? Studio { get; set; }
         public string Password { get; set; }
         public byte[]? Photo { get; set; }
-        public List<СomboSet>? Projects { get; set; }
+        public List<СomboSet>? СomboSets { get; set; }
     }
 }
