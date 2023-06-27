@@ -24,9 +24,8 @@ namespace LB5_1
             this.currentUser = musician;
             LoadProject();
 
-            // Создаем таймер
             var timer = new System.Windows.Forms.Timer();
-            timer.Interval = 5000; // Интервал обновления в миллисекундах
+            timer.Interval = 5000; 
             timer.Tick += timer1_Tick;
             timer.Start();
 
@@ -55,7 +54,6 @@ namespace LB5_1
 
             pictureBox1.Click += (sender, e) =>
             {
-                // Создаем новую форму для отображения данных о пользователе
                 var userForm = new FormAdminInformation(currentUser);
                 userForm.ShowDialog();
             };
@@ -72,8 +70,6 @@ namespace LB5_1
             {
                 Project = db.Projects.ToList();
             }
-
-            // Очищаем flowLayoutPanel1
             flowLayoutPanel1.Controls.Clear();
 
             foreach (var Project in Project)
