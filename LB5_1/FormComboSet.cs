@@ -62,6 +62,11 @@ namespace LB5_1
                         MessageBox.Show("Заполните все поля");
                         return;
                     }
+                    if (pictureBox1.Image == null)
+                    {
+                        MessageBox.Show("Выберите изображение");
+                        return;
+                    }
                     СomboSet project = new СomboSet
                     {
                         Name = textBoxTitle.Text,
@@ -72,7 +77,7 @@ namespace LB5_1
 
                     db.Projects.Add(project);
                     db.SaveChanges();
-                    MessageBox.Show($"Проект {textBoxTitle.Text} добавлен");
+                    MessageBox.Show($"Комбо-сет {textBoxTitle.Text} добавлен");
                     textBoxTitle.Clear();
                     textBoxDr.Clear();
                     textBoxGenre.Clear();

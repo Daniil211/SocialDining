@@ -88,18 +88,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 30);
+            this.label1.Size = new System.Drawing.Size(57, 30);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Дата и время \r\nпоставки";
+            this.label1.Text = "Дата\r\nпоставки";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 99);
+            this.label2.Location = new System.Drawing.Point(22, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 15);
+            this.label2.Size = new System.Drawing.Size(88, 30);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Длительность";
+            this.label2.Text = "Срок годности\r\n(в днях)";
             // 
             // label3
             // 

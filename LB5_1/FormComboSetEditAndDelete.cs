@@ -29,8 +29,7 @@ namespace LB5_1
         {
             using (DataContext db = new DataContext())
             {
-                try
-                {
+               
                     if (dataGridView1.SelectedRows.Count > 0)
                     {
                         int index = dataGridView1.SelectedRows[0].Index;
@@ -45,11 +44,7 @@ namespace LB5_1
                         dataGridView1.DataSource = db.Projects.Local.ToBindingList();
                         MessageBox.Show("Deleted");
                     }
-                }
-                catch
-                {
-                    MessageBox.Show("Error");
-                }
+               
             }
         }
 

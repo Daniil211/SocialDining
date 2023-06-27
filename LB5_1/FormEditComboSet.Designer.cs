@@ -73,18 +73,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(59, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(66, 15);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Genre";
+            this.label3.Text = "Тип комбо";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(43, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 15);
+            this.label2.Size = new System.Drawing.Size(86, 15);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Продолжительность";
+            this.label2.Text = "Калорийность";
             // 
             // label1
             // 

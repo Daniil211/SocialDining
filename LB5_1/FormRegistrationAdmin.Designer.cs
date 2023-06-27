@@ -157,6 +157,7 @@
             // 
             this.textBoxPas.Location = new System.Drawing.Point(20, 294);
             this.textBoxPas.Name = "textBoxPas";
+            this.textBoxPas.PasswordChar = '*';
             this.textBoxPas.Size = new System.Drawing.Size(169, 23);
             this.textBoxPas.TabIndex = 25;
             // 
